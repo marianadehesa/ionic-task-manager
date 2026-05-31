@@ -33,17 +33,13 @@ Este proyecto permite crear y administrar listas de tareas mediante una interfaz
 ## 📋 Funcionalidades
 
 
--Crear listas de tareas
--Agregar tareas a una lista
--Visualizar pendientes
--Navegación mediante Tabs
--Gestión de datos mediante servicios
+- Crear listas de tareas
+- Agregar tareas a una lista
+- Visualizar pendientes
+- Navegación mediante Tabs
+- Gestión de datos mediante servicios
 
 ---
-
-## 📂 Estructura del proyecto
-
-## 📂 Estructura del proyecto
 
 ## 📂 Estructura del proyecto
 
