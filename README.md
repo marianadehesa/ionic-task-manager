@@ -55,7 +55,7 @@ git clone https://github.com/marianadehesa/ionic-task-manager.git
 ### 2. Entrar al proyecto
 
 ```bash
-cd ionic-task-manager
+cd tareas
 ```
 
 ### 3. Instalar dependencias
