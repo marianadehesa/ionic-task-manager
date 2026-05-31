@@ -1,0 +1,35 @@
+<ion-header [translucent]="true" color="secondary">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{lista?.titulo}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="tertiary">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating" color="dark">
+          Nuevo
+      </ion-label>
+      <ion-input type="text" placeholder="Ingresa la nueva tarea" color="light" [(ngModel)]="nombreItem" (keyup.enter)="agregarTarea()"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-list-header color="primary">
+    <ion-label>Tareas por hacer</ion-label>
+  </ion-list-header>
+  <ion-item-sliding *ngFor="let item of lista?.items; let i=index" 
+  class="animate__animated animate__fadeInLeft">
+    <ion-item  color="secondary" >
+    <ion-checkbox slot="start" [(ngModel)]="item.completado" (ionChange)="cambioCheckbox()"> </ion-checkbox>
+    <ion-label color="light"> {{item.desc}}</ion-label>
+  </ion-item>
+  <ion-item-options>
+    <ion-item-option color="danger" (click)="borraTarea(i)">
+      <ion-icon slot="icon-only" name="trash"> </ion-icon>
+    </ion-item-option>
+  </ion-item-options>
+  </ion-item-sliding>
+
+</ion-content>
